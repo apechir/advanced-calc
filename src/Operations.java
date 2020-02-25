@@ -38,7 +38,7 @@ public class Operations {
     }
 
     public double sum(double a, double b) { //double addition
-        return a + b;
+        return round(a + b);
     }
 
     public int sub(int a, int b) { //integer subtraction
