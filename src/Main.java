@@ -6,15 +6,9 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) { //Runs basic test.
-        double result = test();
-        System.out.println("Result: " + result);
-    }
-
     public static double test() {
         double num1, num2, result = 0.0;
         String operator;
-
         Operations op = new Operations();
         Scanner sc = new Scanner(System.in);
         System.out.println("[Calculator Program]");
@@ -54,5 +48,9 @@ public class Main {
         }
 
         return result;
+    }
+    public static void main(String[] args) { //Runs basic test.
+        double result = test();
+        System.out.println("Result: " + result);
     }
 }
