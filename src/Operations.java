@@ -58,11 +58,23 @@ public class Operations {
     }
 
     public double div(int a, int b) { //integer division
-        return round((double)a / b);
+        if (b != 0) {
+            return round((double)a / b);
+        }
+        else {
+            System.err.println("Cannot divide by zero!");
+            return 0.0;
+        }
     }
 
     public double div(double a, double b) { //double division
-        return round(a / b);
+        if (b != 0) {
+            return round(a / b);
+        }
+        else {
+            System.err.println("Cannot divide by zero!");
+            return 0.0;
+        }
     }
 
     public int pow(int a, int n) { //int exponentiation
